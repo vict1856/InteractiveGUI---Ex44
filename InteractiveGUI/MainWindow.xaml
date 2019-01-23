@@ -1,0 +1,26 @@
+﻿<Window x:Class="InteractiveGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InteractiveGUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Grid>
+        <Label Name ="PersonCount" Content="Person Count:" HorizontalAlignment="Left" Margin="50,35,0,0" VerticalAlignment="Top"/>
+        <Label Name ="IndexCount" Content="Index:" HorizontalAlignment="Left" Margin="245,35,0,0" VerticalAlignment="Top"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="50,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="50,135,0,0" VerticalAlignment="Top"/>
+        <Label Content="Age" HorizontalAlignment="Left" Margin="50,180,0,0" VerticalAlignment="Top"/>
+        <Label Content="Phone Nr." HorizontalAlignment="Left" Margin="50,225,0,0" VerticalAlignment="Top"/>
+        <TextBox Name ="FirstName" HorizontalAlignment="Left" Height="23" Margin="150,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsEnabled="True" TextChanged="FirstName_TextChanged"/>
+        <TextBox Name ="LastName" HorizontalAlignment="Left" Height="23" Margin="150,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsEnabled="True" TextChanged="LastName_TextChanged"/>
+        <TextBox Name ="Age" HorizontalAlignment="Left" Height="23" Margin="150,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsEnabled="True" TextChanged="Age_TextChanged"/>
+        <TextBox Name ="PhoneNr" HorizontalAlignment="Left" Height="23" Margin="150,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsEnabled="True" TextChanged="PhoneNr_TextChanged"/>
+        <Button Name ="NewPerson" Content="New Person" HorizontalAlignment="Left" Margin="340,89,0,0" VerticalAlignment="Top" Width="90" Height="25" Click="NewPerson_Click"/>
+        <Button Name ="DeletePerson" Content="Delete Person" HorizontalAlignment="Left" Margin="340,134,0,0" VerticalAlignment="Top" Width="90" Height="25" IsEnabled="True" Click="DeletePerson_Click"/>
+        <Button Name ="ScrollUp" Content="Up" HorizontalAlignment="Left" Margin="340,179,0,0" VerticalAlignment="Top" Width="90" Height="25" IsEnabled="True" Click="ScrollUp_Click"/>
+        <Button Name ="ScrollDown" Content="Down" HorizontalAlignment="Left" Margin="340,224,0,0" VerticalAlignment="Top" Width="90" Height="25" IsEnabled="True" Click="ScrollDown_Click"/>
+
+    </Grid>
+</Window>
